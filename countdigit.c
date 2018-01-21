@@ -3,11 +3,27 @@
  
 int main()
 {
-    char a[1000],i,count=0;
-    gets(a);
-    for(i=0;i<strlen(a);i++)
-    {if(isdigit(a[i]))
-      count++; 
+    char   str[1000];
+    int countSpecialChar;
+    int counter;
+    countSpecialChar=0;
+    gets(str);
+    if(strlen(str)<=1000){
+ 
+    for(counter=0;str[counter]!=NULL;counter++)
+    {
+ 
+        if(str[counter]>='0' && str[counter]<='9')
+            {  }
+        else if((str[counter]>='A' && str[counter]<='Z')||(str[counter]>='a' && str[counter]<='z'))
+            { }
+        else if(str[counter]==' ')
+            { }
+        else
+            countSpecialChar++;
     }
-    printf("%d",count);
+ 
+    printf("%d",countSpecialChar);
+    
+    return 0;}
 }
