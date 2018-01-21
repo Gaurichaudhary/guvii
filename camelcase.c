@@ -1,12 +1,13 @@
 
+
+
 #include<stdio.h>
 #include<string.h>
 int main()
 {
     char  a[1000000];
     int i;
-    scanf("%[^\n\t]s",&a);
-    
+   scanf("%[^\t]s",a);
     if(strlen(a)<=1000000){
       if(a[0]>=97)
         a[0]=a[0]-32;
