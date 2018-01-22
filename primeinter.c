@@ -5,7 +5,7 @@ int main()
     printf("Enter two numbers\n");
     scanf("%d %d", &low, &high);
     low=low+1;
-    high=high-1;
+    high=high;
 
 
     while (low < high)
